@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Splitting Circles Game</title>
+    <link rel="stylesheet" href="gamestyles.css">
+    <link rel="stylesheet" href="searchStyles.css">
+  </head>
+  <body>
+    <div class="logo-container">
+      <img src="logo.png" alt="Logo">
+    </div>
+    <canvas id="game-canvas" width="600" height="600"></canvas>
+    <div id="buttons-container">
+      <div id="buttons-wrapper">
+        <input type="text" id="search-bar" placeholder="search for an image...">
+        <button id="search-button" class="game-button">Search</button>
+        <button id="restart-button" class="game-button">Reset</button>
+      </div>
+    </div>
+
+    <!--Modal HTML code -->
+    <div id="modal" class="modal hidden">
+      <div class="modal-content">
+        <!-- Add your modal content here -->
+        <div class="header">
+          <h2>Search Results</h2>
+          <button id="exit-button" onclick="document.getElementById('modal').classList.add('hidden')">Exit</button>
+        </div> 
+        <div class="search-results">
+          <div id="search-results-container"></div> <!-- rename the search results element to "search-results-container" -->
+        </div>
+      </div>
+    </div>
+
+
+    <script src="game.js"></script>
+    <script src="search.js"></script>
+  </body>
+</html>
+
+
